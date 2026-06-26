@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "persoon@ornifex.com",
+                "Name": "Ornifex"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "A widget that shows rivalcfg battery levels.",
+        "Icon": "battery",
+        "Id": "com.ornifex.rival-cfg-battery",
+        "Name": "rival-cfg Battery Levels",
+        "Version": "1",
+        "Website": "https://example.com/user/plasmoid-helloworldplugin",
+        "BugReportUrl": "https://example.com/user/plasmoid-helloworldplugin/bugs"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
