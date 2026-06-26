@@ -13,7 +13,7 @@ PlasmoidItem {
     Plasma5Support.DataSource {
         id: rivalcfgSource
         engine: "executable"
-        connectedSources: ["/var/home/bazzite/.local/bin/rivalcfg --battery-level"]
+        connectedSources: ["rivalcfg --battery-level"]
         interval: 600000 
         
         onNewData: (sourceName, data) => {
