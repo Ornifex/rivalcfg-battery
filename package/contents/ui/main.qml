@@ -14,20 +14,17 @@ PlasmoidItem {
         id: rivalcfgSource
         engine: "executable"
         connectedSources: ["rivalcfg --battery-level"]
-        interval: 600000 
+        interval: 1000
         
         onNewData: (sourceName, data) => {
             var output = data["stdout"].trim();
+            batteryLabel.text = "Off";
             if (output) {
                 // Regex matches digits (\d+)
                 var match = output.match(/\d+/);
                 if (match) {
                     batteryLabel.text = match[0];
-                } else {
-                    batteryLabel.text = output;
                 }
-            } else {
-                batteryLabel.text = "Off";
             }
         }
     }
